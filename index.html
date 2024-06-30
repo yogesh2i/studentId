@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3>ID Card Generator</h3>
+        <div class="box">
+          <div class="left">
+           
+            <form id="form">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" name="sname">
+                <label for="clg">Enter College Name:</label>
+                <input type="text" id="clg" name="clg">
+                <label for="loc">Enter Location:</label>
+                <input type="text" id="loc" name="loc">
+                <label for="pic">Enter Student`s Picture:</label>
+                <input type="file" id="pic" name="pic" accept="image/*">
+                <button id="gnrt" type="button">Generate Card</button>
+            </form>
+          </div>
+          <div class="right" id="dcard">
+            <h2>Generated ID Card</h2>
+            <div class="card">
+                <div class="img">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.p7wO15QaqNIJVmkrh7Y7FwHaEK&pid=Api&P=0&h=180" alt="img" id="dpic">
+                </div>
+                <div class="details">
+                    <p>Name: <span id="dname">Name</span></p>
+                    <p>College Name: <span id="dclg">College</span></p>
+                    <p>Location: <span id="dloc">Location</span></p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
